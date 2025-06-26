@@ -18,7 +18,7 @@ app.use(cookieParser());
    app.use(
        cors({
            origin: [
-               'https://chat-frontend-gskt3hn39-divyansh-tech-news-projects.vercel.app',
+               'https://chat-frontend-83rluh3a5-divyansh-tech-news-projects.vercel.app',
                'http://localhost:5173'
            ],
            methods: ['GET', 'POST', 'PUT', 'DELETE'],
