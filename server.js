@@ -15,16 +15,16 @@ const cloudinaryRoutes = require('./routes/cloudinaryRoutes');
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-    cors({
-        origin: [
-            'https://your-frontend-url.com', // TODO: Replace with your deployed frontend URL
-            'http://localhost:5173'
-        ],
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        credentials: true,
-    })
-);
+   app.use(
+       cors({
+           origin: [
+               'https://chat-frontend-gskt3hn39-divyansh-tech-news-projects.vercel.app',
+               'http://localhost:5173'
+           ],
+           methods: ['GET', 'POST', 'PUT', 'DELETE'],
+           credentials: true,
+       })
+   );
 
 if (!existsSync('uploads/profiles')) {
     mkdirSync('uploads/profiles', { recursive: true });
